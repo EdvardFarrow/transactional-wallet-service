@@ -93,3 +93,19 @@ Run Unit tests (checking API, commissions, and restrictions):
 make test
 ```
 
+## Screenshots
+
+### Transaction + fee
+![Transactions + fee](docs/image/Transactions_+_fee.png)
+
+### Transactions
+![Transactions RCA](docs/image/Transactions_RCA.png)
+
+### Wallets + fee
+![Wallets + fee](docs/image/Wallets_+_fee.png)
+
+### Celery_tasks
+![Celery tasks](docs/image/Celery_tasks.png)
+
+
+
