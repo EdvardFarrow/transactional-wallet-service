@@ -42,14 +42,13 @@ The project includes a `Makefile` for single-command management.
 Build containers, apply migrations, and create test data (Alice, Bob, Admin):
 
 ```bash
-make init
+1. `cp .env.example .env`
+2. `make init` (Setup DB & Users)
+3. 'make migrate' (Migrations)
+4. `make run` (Start Server)
 ```
-*This command starts web, db, redis, celery, applies migrations, and populates the database with initial data.*
+*This commands starts web, db, redis, celery, applies migrations, and populates the database with initial data.*
 
-### 2. Start Server (if not running)
-```bash
-make up
-```
 
 ## Demonstration (Verification Script)
 
