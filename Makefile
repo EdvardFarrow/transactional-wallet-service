@@ -4,7 +4,7 @@ install:
 	pip install -r requirements.txt
 
 up:
-	docker compose up -d
+	docker compose up -d db redis celery
 
 down:
 	docker compose down
@@ -15,7 +15,7 @@ clean:
 migrate:
 	python manage.py migrate
 
-init: clean up
+init: clean up 
 	@echo "Waiting for DB to initialize..."
 	@sleep 5
 	python manage.py migrate
